@@ -57,6 +57,7 @@ const temperature = document.getElementById('temperature');
 const time = document.getElementById('time');
 const feelsLike = document.getElementById('feelsLike');
 const windSpeed = document.getElementById('windSpeed');
+const icon = document.getElementById('icons');
 const fetchWeatherData = async () => {
     const cityValue = city.value;
     const url = `https://api.weatherstack.com/current?access_key=b0bc374afa5d7c64a7f64c593064f9a6&query=${cityValue}`;
@@ -80,7 +81,8 @@ const fetchWeatherData = async () => {
         time.innerHTML = data.current.observation_time;
         humidity.innerHTML = data.current.humidity;
         feelsLike.innerHTML = data.current.feelslike;
-        windSpeed.innerHTML = data.current.wind_speed
+        windSpeed.innerHTML = data.current.wind_speed;
+        icon.src  = data.current.weather_icons;
         
     } catch (error) {
         console.error('Error fetching weather data:', error);
@@ -89,6 +91,11 @@ const fetchWeatherData = async () => {
 
 button.addEventListener('click', fetchWeatherData)
 // 
+
+
+
+
+
 
 
 

@@ -60,7 +60,7 @@ const windSpeed = document.getElementById('windSpeed');
 const icon = document.getElementById('icons');
 const fetchWeatherData = async () => {
     const cityValue = city.value;
-    const url = `https://api.weatherstack.com/current?access_key=b0bc374afa5d7c64a7f64c593064f9a6&query=${cityValue}`;
+    const url = `https://api.weatherstack.com/current?access_key=b0bc374afa5d7c64a7f64c593064f9a6&query=${cityValue}&units=f`;
     const options = {
         method: 'GET'
     };

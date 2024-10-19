@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    margin-top: 10rem;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
@@ -13,7 +14,7 @@ body {
     justify-content: space-between;
     margin: auto;
     color: white;
-    
+    border-radius: 10px;
     background-color: grey;
     max-width: 80vw;
     height: 40vh;
@@ -21,6 +22,21 @@ body {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,101,121,1) 25%, rgba(0,212,255,1) 100%);
 }
 
+.form {
+    height: 2rem;
+    ;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: .5rem;
+    
+    
+}
+button {
+    color: white;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,101,121,1) 25%, rgba(0,212,255,1) 100%); 
+}
 .info {
     margin-left: 1.9rem;
 
@@ -30,4 +46,10 @@ body {
 #temperature {
     font-size: 4rem;
     margin-top: -1rem;
+}
+
+img {
+    width: 15rem;
+    height: 100%;
+    border-radius: 10px;
 }

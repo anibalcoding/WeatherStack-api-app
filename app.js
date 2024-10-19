@@ -78,7 +78,7 @@ const fetchWeatherData = async () => {
         cityName.innerHTML = data.location.name;
         country.innerHTML = data.location.country;
         temperature.innerHTML = `${data.current.temperature} &#176`;
-        time.innerHTML = `The current time is ${data.current.observation_time}`;
+        time.innerHTML = `The current time is ${data.location.localtime}`;
         // humidity.innerHTML = data.current.humidity;
         // feelsLike.innerHTML = data.current.feelslike;
         // windSpeed.innerHTML = data.current.wind_speed;
